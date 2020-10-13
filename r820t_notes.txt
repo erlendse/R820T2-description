@@ -1,0 +1,23 @@
+IF Calibrate:
+Requires: Cali-clock, cali-trigger
+Gives: cal-code
+
+To verify? mixer LO is divided down by a given ratio and filters are adjusted to get a given drop in signal level.
+Final filter bandwidth may be dependent of tuned frequency! Try to force different cal-codes.
+
+Image reject:
+Connect ring-osc to mixer input (via tracking filter), and try to cancel out the image by tuning so the ring-osc is in the image frequency. 
+Driver uses a complex pattern of many levels and frequencies, not fully figured out.
+
+IF filter plotting:
+Activate ring-osc, mixer src=ring osc, set a single frequency
+step(1 kHz or less) the LO while obsering ADC (pdet3)
+
+Quick tune:
+Step VCO over VCO span while logging band (r2).
+
+Quick-tune by manually loading VCO band (r19), and turning off auto-tune.
+
+Tuner AGC:
+There are tresholds and gains, settings should be figured out per signal type
+
