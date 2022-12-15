@@ -24,9 +24,7 @@ The core & band selections can be mapped out in advance if quick tuning is desir
 # Tuner AGC:
 LNA(wideband) & MIXER (narrowband) have a detector gain setting, + lower and upper thresholds for detector voltage before gain steps up or down.
 
-<picture>
-<source srcset="r820t-diagram.png">
-</picture>
+![block diagram](r820t-diagram.png)
 
 The gain steps are clocked by a selectiable clock
 
